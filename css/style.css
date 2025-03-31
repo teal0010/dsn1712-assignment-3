@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color:#fff;
+}
+
+.wrapper {
+  max-width: 940px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#hero {
+  height: 600px;
+  background-image: url('images/hands-typing.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  position: relative; 
+}
+
+#hero h1 {
+  max-width: 60%;
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+#hero img {
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  filter: grayscale(70%); 
+  z-index: -1; 
+}
+
+#about-me {
+  background-color: #fff;
+  padding: 50px 0; /* Adds padding on top and bottom */
+  color: black; /* White text */
+}
+
+/* Wrapper */
+#about-me .wrapper {
+  max-width: 940px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the wrapper horizontally */
+  display: flex; /* Flexbox layout for two columns */
+  justify-content: space-between; /* Space between text and image */
+  align-items: flex-end; /* Aligns the image to the bottom of the section */
+  gap: 20px; /* Adds spacing between the two columns */
+}
+
+/* Text Column */
+.about-text {
+  flex: 1; /* Makes the text column take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically within its container */
+}
+
+.about-image {
+  flex: 0 0 40%;
+}
+
+.about-image img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px;
+}
