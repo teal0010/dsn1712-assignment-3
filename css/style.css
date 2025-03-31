@@ -177,6 +177,7 @@ nav ul li a {
   display: grid;
   width: 100%;
   max-width: 940px;
+  padding: 2em;
 
   grid-template-areas: 
     "img1 img1 img2"
