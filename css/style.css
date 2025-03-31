@@ -10,28 +10,33 @@ body {
 
 .wrapper {
   max-width: 940px;
+  margin: 0;
+  padding: 0;
 }
 
 header .wrapper {
+  max-width: 940px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
 }
 
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 1em;
   list-style: none;
+}
+
+nav ul li a {
   text-decoration: none;
+  color: white;
 }
 
 #hero {
   height: 600px;
   background-image: url('images/hands-typing.jpg');
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-size: cover; 
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -40,16 +45,15 @@ nav ul {
 }
 
 #hero h1 {
-  max-width: 60%;
   color: white; 
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px 20px; 
   border-radius: 5px; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-  max-width: 30%; 
+  max-width: 30%;
 }
 
-#hero img {
+#hero img { 
   position: absolute;
   width: 100%; 
   height: 100%; 
@@ -60,16 +64,16 @@ nav ul {
 
 #about-me {
   background-color: #fff;
-  padding: 50px 0; 
+  padding: 0; 
   color: black; 
 }
 
 #about-me .wrapper {
   max-width: 940px; 
-  margin: 0 auto; 
+  margin-left: 8em; 
   display: flex; 
   justify-content: space-between; 
-  align-items: flex-end;
+  align-items: center;
   gap: 20px;
 }
 
@@ -80,25 +84,21 @@ nav ul {
   justify-content: center;
 }
 
-.about-image {
-  flex: 0 0 40%;
-}
-
 .about-image img {
-  width: 100%; 
+  max-width: 100%; 
+  width: 300px;
   height: auto; 
-  border-radius: 10px;
 }
 
 #services {
   padding: 50px 0; 
-  background-color: whitesmoke; 
+  background-color: #fafafa; 
   color: black; 
 }
 
 #services > div {
   max-width: 940px; 
-  margin: 0 auto; 
+  margin: auto; 
   text-align: center; 
 }
 
@@ -116,10 +116,10 @@ nav ul {
 }
 
 #services article {
-  flex: 1 1 30%;
+  width: 30%;
   background-color: white; 
-  padding: 20px; 
-  border-radius: 10px; 
+  padding: 1em; 
+ 
 }
 
 #services article h3 {
@@ -129,9 +129,8 @@ nav ul {
 
 #services article p {
   text-align: left;
-  font-size: 1rem; 
-  line-height: 1.6; 
-  margin-bottom: 20px; 
+  font-size: 1rem;  
+  margin-bottom: 1em; 
 }
 
 #services article .btn {
@@ -142,6 +141,7 @@ nav ul {
   text-decoration: none;
   border-radius: 5px; 
   font-weight: bold;
+  margin: 1em;
 }
 
 #services article .btn:hover {
